@@ -1,16 +1,33 @@
+$text-align: center;
+
+
+
 body {
   font-family: 'Nunito', sans-serif;
 }
 
 h1 {
-  text-align: center;
+  text-align: $text-align;
   font-size: 200%;
 }
 
 h2 {
-  text-align: center;
+  text-align: $text-align;
   font-weight: 100;
   font-size: 110%;
+}
+
+h3{
+  text-align: $text-align;
+  font-size: 35px;
+  margin: 20px 0px;
+  color: rgb(39, 39, 39);
+}
+
+p{
+  width: 440px;
+  text-align: $text-align;
+  margin: 0 auto;
 }
 
 nav {
@@ -33,20 +50,42 @@ nav {
       padding: 0.5em;
       border-radius: 6px;
       width: 8em;
-      text-align: center;
+      text-align: $text-align;
       display: inline-block;
     }
   }
 }
 
-.signup-form form input[type=submit] {
-  border: none;
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
-  text-align: center;
+.signup-form {
   display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  .name {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      padding: 5px 10px;
+      width: 50%;
+      border-radius: 6px;
+      border: 2px solid rgb(199, 199, 199);
+    }
+  }
+  input {
+    padding: 5px 10px;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 2px solid rgb(199, 199, 199);
+  }
+  form input[type=submit] {
+    border: none;
+    background-color: blue;
+    text-decoration: none !important;
+    color: white;
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 6em;
+    text-align: $text-align;
+    display: inline-block;
+  }
 }
