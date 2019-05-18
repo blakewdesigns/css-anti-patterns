@@ -1,20 +1,22 @@
 body {
   font-family: "Nunito", sans-serif;
+  
+}
+
+h1 h2 h3 p {
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   font-size: 200%;
 }
 
 h2 {
-  text-align: center;
   font-weight: 100;
   font-size: 110%;
 }
 
 h3 {
-  text-align: center;
   font-size: 35px;
   margin: 20px 0px;
   color: #272727;
@@ -22,7 +24,6 @@ h3 {
 
 p {
   width: 440px;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -41,7 +42,7 @@ nav li {
 }
 nav li .blue-button {
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
@@ -50,36 +51,47 @@ nav li .blue-button {
   display: inline-block;
 }
 
+.peoplehead {
+  display: grid;
+}
+
 .signup-form {
-  display: inline-block;
-  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
 }
-.signup-form .name {
+.signup-form form input {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0 auto;
+  border-color: 2px solid #c7c7c7;
+}
+.signup-form form .name {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.signup-form .name input {
-  padding: 5px 10px;
+.signup-form form .name input {
   width: 50%;
-  border-radius: 6px;
-  border: 2px solid #c7c7c7;
 }
-.signup-form input {
-  padding: 5px 10px;
+.signup-form form input {
   width: 100%;
   flex-direction: column;
-  border-radius: 6px;
-  border: 2px solid #c7c7c7;
 }
 .signup-form form input[type=submit] {
   border: none;
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
-  border-radius: 6px;
-  width: 6em;
+  border-radius: 5px;
+  width: 8em;
   text-align: center;
   display: inline-block;
 }
