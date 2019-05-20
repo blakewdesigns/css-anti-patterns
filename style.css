@@ -22,6 +22,11 @@ h3 {
   color: #272727;
 }
 
+h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 p {
   width: 25em;
   margin: 0 auto;
@@ -54,6 +59,48 @@ nav li .blue-button {
 .tagline-pane {
   display: grid;
 }
+
+.info-pane {
+  display: grid;
+  grid-template: column;
+}
+
+.tagline-pane h3, p, a{
+  grid-template-columns: 4fr;
+  text-align: center;
+}
+
+.tagline-pane p{
+  width: 40em;
+}
+
+.tagline-pane a{
+  padding-top: 15px;
+}
+
+.img-group{
+  display: grid;
+  grid-template: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  list-style: none;
+  padding-top: 80px;
+}
+
+.hero-video {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.hero-video h4, p{
+  padding-left: 30px;
+}
+
+.hero-video p{
+  text-align: left;
+}
+
 
 .signup-form {
   max-width: 80%;
