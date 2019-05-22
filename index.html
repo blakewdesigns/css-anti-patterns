@@ -13,56 +13,55 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <nav class="nav">
-      <ul class="nav--links">
-        <li><a href="#">Admissions</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a class="blue-button" href="#">Schedule a Tour</a></li>
+    <nav class="navbar">
+      <ul class="nav">
+        <li class="nav__links"><a href="#">Admissions</a></li>
+        <li class="nav__links"><a href="#">Programs</a></li>
+        <li class="nav__links"><a href="#">Pricing</a></li>
+        <li class="nav__links nav__links--btn"><a class="blue-button" href="#">Schedule a Tour</a></li>
       </ul>
     </nav>
 
     <section class="hero">
-      <h1 class="hero--title">Design your tech career</h1>
-      <h2 class="hero--subtitle">Kenzie Academy is a two-year learning track and apprenticeship program.</h2>
-      <iframe class="hero--video" width="560" height="315" src="https://www.youtube.com/embed/FqVHe2BGdEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h1 class="hero__title">Design your tech career</h1>
+      <h2 class="hero__subtitle">Kenzie Academy is a two-year learning track and apprenticeship program.</h2>
+      <iframe class="hero__video" width="100%" height="315" src="https://www.youtube.com/embed/FqVHe2BGdEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section class="press">
-      <blockquote class="press--quote" cite="http://www.aei.org/publication/the-other-challenge-of-artificial-intelligence/">
+      <blockquote class="press__quote" cite="http://www.aei.org/publication/the-other-challenge-of-artificial-intelligence/">
         "The new Indianapolis-based venture is creating a new type of program that combines work and school to teach nontechies…"
       </blockquote>
-      <blockquote class="press--quote" cite="https://techcrunch.com/2017/10/29/kenzie-academy/">
+      <blockquote class="press__quote" cite="https://techcrunch.com/2017/10/29/kenzie-academy/">
         "…an educational project aimed at adapting the Agility.io model to help get Middle America in on the tech boom."
       </blockquote>
     </section>
 
-    <section class="courses">
-      <ul>
-        <li>
-          <div class="date">
-            <div class="month">Jul</div>
-            <div class="day">10</div>
+    <section class="courses-section">
+        <div class="courses">
+          <div class="courses__date">
+            <div class="courses__month">Jul</div>
+            <div class="courses__day">10</div>
           </div>
           <h3>Software Engineering</h3>
           <button>Learn to Code</button>
-        </li>
-        <li>
-          <div class="date">
-            <div class="month">Jul</div>
-            <div class="day">10</div>
+        </div>
+        <div class="courses">
+          <div class="courses__date">
+            <div class="courses__month">Jul</div>
+            <div class="courses__day">10</div>
           </div>
-          <h3>User Experience</h3>
+          <h3 class="courses__heading">User Experience</h3>
           <button>Learn to Design</button>
-        </li>
-        <li>
-          <div class="date">
-            <div class="month">Jul</div>
-            <div class="day">10</div>
+        </div>
+        <div class="courses">
+          <div class="courses__date">
+            <div class="courses__month">Jul</div>
+            <div class="courses__day">10</div>
           </div>
           <h3>Digital Marketing</h3>
           <button>Learn to Market</button>
-        </li>
+        </div>
     </section>
 
     <section class="compare-programs">
@@ -72,28 +71,28 @@
 
     <section class="info-pane">
       <div class="tagline-pane">
-      <h3>Meet Kenzie</h3>
-      <p>We founded Kenzie Academy to tackle a major opportunities gap in America. We discovered that fast-growing technology companies concentrated in expensive coastal cities were struggling to hire tech talent. Meanwhile, a large population of aspiring individuals across the country could help fuel these talent needs. Our mission is to equip this population with the necessary skills, experience, and access in order to build successful careers in tech.</p>
-      <a href="#">Read our story →</a>
+        <h3>Meet Kenzie</h3>
+        <p>We founded Kenzie Academy to tackle a major opportunities gap in America. We discovered that fast-growing technology companies concentrated in expensive coastal cities were struggling to hire tech talent. Meanwhile, a large population of aspiring individuals across the country could help fuel these talent needs. Our mission is to equip this population with the necessary skills, experience, and access in order to build successful careers in tech.</p>
+        <a href="#">Read our story →</a>
       </div>
-      <ul class="img-group">
-        <li class="group">
+      <div class="img-group">
+        <div class="img-group__item">
           <img src="https://via.placeholder.com/180x80" alt="faces" />
           <h4>Team</h4>
-        </li>
-        <li class="group">
+        </div>
+        <div class="img-group__item">
           <img src="https://via.placeholder.com/180x80" alt="faces" />
           <h4>Board</h4>
-        </li>
-        <li class="group">
+        </div>
+        <div class="img-group__item">
           <img src="https://via.placeholder.com/180x80" alt="faces" />
           <h4>Mentors</h4>
-        </li>
-        <li class="group">
+        </div>
+        <div class="img-group__item">
           <img src="https://via.placeholder.com/180x80" alt="faces" />
           <h4>Advisors</h4>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="student-video">
         <img src="https://via.placeholder.com/200x100" alt="faces" />
@@ -105,16 +104,16 @@
     </section> 
 
     <section class="signup">
-      <h3 class="signup--title">Let's Chat.</h3>
-      <p class="signup--body">Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the conversation going.</p>
+      <h3 class="signup__title">Let's Chat.</h3>
+      <p class="signup__body">Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the conversation going.</p>
       
-      <form class="signup--form">
-        <div class="signup--fields">
-          <input class="signup--shortfield" placeholder="First Name" />
-          <input class="signup--shortfield" placeholder="Last Name" />
+      <form class="signup__form">
+        <div class="signup__fields">
+          <input class="signup__shortfield" placeholder="First Name" />
+          <input class="signup__shortfield" placeholder="Last Name" />
         </div>
-        <input class="signup--longfield" placeholder="Email" />
-        <input class="signup--longfield" placeholder="Phone" />
+        <input class="signup__longfield" placeholder="Email" />
+        <input class="signup__longfield" placeholder="Phone" />
         <input type="submit" />
       </form>
     </section>
