@@ -9,10 +9,6 @@ h1 h2 h3 p {
 h1 {
   font-size: 200%;
 }
-/* h2 {
-  font-weight: 100;
-  font-size: 110%;
-} */
 h3 {
   font-size: 2.25em;
   margin: 1em 0em;
@@ -36,6 +32,7 @@ img {
 
 .navbar{
   display: none;
+  
 }
 .hero{
   display: block;
@@ -109,8 +106,12 @@ img {
   .navbar{
     display: block;
     position: absolute;
-    right: 0;
     padding-right: 30px;
+    position: absolute;
+    animation-name: navslide;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    top: 0;
   }
   .nav {
     display: flex;
@@ -119,7 +120,18 @@ img {
   .hero{
     padding-top: 100px;
   }
+  .signup {
+    max-width: 600px;
+  }
+  @keyframes navslide {
+    100% {
+      top: 0;
+      right: 0;
+    }
 }
+
+
+
 
 /* Block styles */
 .hero__title{
@@ -139,6 +151,9 @@ img {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
+}
+.hero__video:hover{
+  opacity: .5;
 }
 .courses__date, .courses__heading{
   text-align: center;
@@ -172,34 +187,29 @@ img {
   background-color: darkblue;
   color: white;
 }
+.compare-programs__btn:hover{
+  background-color: white;
+  color: darkblue;
+}
+.signup__title{
+  margin-bottom: 18px;
+}
+.signup__body{
+  margin-bottom: 20px;
+}
 .signup__form{
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
   margin: 0 auto;
 }
-.signup__fields {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.signup__shortfield {
-  width: 50%;
+.signup__shortfield, .signup__longfield {
   padding: .75em;
   border-radius: 5px;
-  margin: 20px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
   border: 1px solid #c7c7c7;
 }
-.signup__longfield{
-  width: 100%;
-  flex-direction: column;
-  padding: .75em;
-  border-radius: 5px;
-  margin: 5px;
-  border: 1px solid #c7c7c7;
-}
-.signup__form input[type=submit]{
+.signup input[type=submit]{
   margin-top: 10px;
   border: 1px solid darkblue;
   background-color: white;
@@ -213,13 +223,17 @@ img {
 }
 
 @media (min-width: 700px){
-  .nav .nav__links {
+  .nav__links {
     display: inline-block;
     margin-top: 0;
     margin-right: .3em;
     margin-left: .3em;
     margin-bottom: 0;
     text-decoration: underline;
+  }
+  .nav__links a:hover{
+    color: blue;
+    font-weight: bold;
   }
   .nav__links--btn a {
     background-color: blue;
@@ -230,6 +244,12 @@ img {
     width: 8em;
     text-align: center;
     display: inline-block;
+  }
+  .nav__links--btn a:hover {
+    color: blue;
+    padding: .44em;
+    background-color: white;
+    border: 1px solid blue;
   }
   .hero__title{
     font-size: 400%;
@@ -244,6 +264,11 @@ img {
     height: 500px;
   }
   .signup__form{
-    width: 30%;
+   width: 600px;
   }
-}
+  .signup__fields{
+    flex-direction: row;
+  }
+  .signup__longfield {
+    width: 350px;
+  }
