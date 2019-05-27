@@ -120,6 +120,10 @@ img {
   .hero{
     padding-top: 100px;
   }
+  .press{
+    padding: 40px 0px;
+    margin: 40px 100px;
+  }
   .signup {
     max-width: 600px;
   }
@@ -151,6 +155,7 @@ img {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
+  border: none;
 }
 .hero__video:hover{
   opacity: .5;
